@@ -36,7 +36,7 @@ module EnvSync
     end
 
     def initialize(options={})
-      @basic_envfile = options.fetch(:basic_envfile) { 'env.yaml' }
+      @basic_envfile = (options || {}).fetch(:basic_envfile) { 'env.yaml' }
       @envs = parse_env_file!(File.read(@basic_envfile))
     end
 

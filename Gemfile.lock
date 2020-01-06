@@ -1,0 +1,22 @@
+PATH
+  remote: .
+  specs:
+    env_sync (1.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    minitest (5.13.0)
+    rake (10.5.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.16)
+  env_sync!
+  minitest (~> 5.0)
+  rake (~> 10.0)
+
+BUNDLED WITH
+   1.16.1

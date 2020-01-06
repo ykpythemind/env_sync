@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "env_sync"
+
+envfile = ARGV[0]
+syncer = EnvSync::Syncer.new({basic_envfile: envfile})
+
+syncer.sync!
+
+exit
